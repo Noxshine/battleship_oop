@@ -338,7 +338,7 @@ public class GameScreen implements Screen {
     private void paintPlayer2Board() {
         List<ShipPosition> possibleBotShips = manager.state() == GameState.FINISHED ? botShips : Collections.emptyList();
         var playerGuesses = manager.stats().getGuesses().get(player);
-        BattleshipPainter.paintBoard(player2Canvas, possibleBotShips, playerGuesses,Color.STEELBLUE);
+        BattleshipPainter.paintBoard(player2Canvas, possibleBotShips, playerGuesses,Color.DARKOLIVEGREEN);
 
     }
 
